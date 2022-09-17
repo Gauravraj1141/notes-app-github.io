@@ -1,0 +1,13 @@
+#addbtn{font-size: 33px;
+background-color: black;
+}
+
+#addbtn:hover{
+  background-color: rgb(1, 63, 1);
+  color: yellow;
+}
+#addbtn:active{
+  font-size: 32.5px;
+  background-color:rgb(188, 229, 2);
+  color:white;
+}

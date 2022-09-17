@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="notes.css">
+
+    <title>Notes taking website</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">My Notes</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Notes</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input id="searchtxt" class="form-control me-2" type="search" placeholder="Search"
+                        aria-label="Search">
+                    <button id="searchbtn" class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- container and my2 is for all the element in the div will be adjust in middle and my2 is for  margin y axis -->
+    <div class="container my-2">
+        <h1>Welcome to The Notes</h1>
+
+
+
+        <div class="card text-center my-4">
+
+            <div class="card-body my-2">
+                <h3 class="card-title">Write Your Notes</h3>
+
+                <!-- we give here a id addtitle -->
+                <div class="form-floating my-3">
+                    <textarea class="form-control" id="addtitle"></textarea>
+                    <label>Title</label>
+                </div>
+
+
+
+                <!-- we give here a id addtext -->
+
+                <div class="form-floating my-3">
+                    <textarea class="form-control" id="addtxt" style="height: 100px"></textarea>
+                    <label>Notes </label>
+                </div>
+
+                <!-- we give a id add notes -->
+                <a class="btn btn-primary" id="addbtn">Add Notes</a>
+            </div>
+
+        </div>
+
+
+        <hr>
+        <h2>Your Notes</h2>
+        <hr>
+        <!-- we give class and id for target this and container fluid for take all space  -->
+        <div id="notes" class="row container-fulid my-2">
+
+        </div>
+
+    </div>
+    </div>
+
+
+
+
+
+
+</body>
+
+<script src="nodes.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+
+</html>
